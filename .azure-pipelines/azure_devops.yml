@@ -82,7 +82,7 @@ stages:
   - template: /.devops/jdk20u/release.yml@jdk-harness
     parameters:
       build_platforms : ${{parameters.build_platforms}}
-      installers_platforms : ${{parameters.installers_platforms}}
+      installers_platforms : []
       test_platforms : []
       release_type : ${{parameters.release_type}}
       release_name : ${{parameters.release_name}}
