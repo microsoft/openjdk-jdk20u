@@ -1163,7 +1163,7 @@ void PhaseOutput::Process_OopMap_Node(MachNode *mach, int current_offset) {
           ciKlass* cik = t->is_oopptr()->exact_klass();
           assert(cik->is_instance_klass() ||
                  cik->is_array_klass(), "Not supported allocation.");
-          ObjectValue* sv = new ObjectValue(spobj->_idx,
+          ObjectValue* sv = new ObjectValue(spobj->_idx, 
                                             new ConstantOopWriteValue(cik->java_mirror()->constant_encoding()),
                                             spobj->is_only_merge_sr_candidate());
           PhaseOutput::set_sv_for_object_node(objs, sv);

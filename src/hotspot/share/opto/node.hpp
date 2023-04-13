@@ -717,7 +717,6 @@ public:
           DEFINE_CLASS_ID(ConI, Con, 0)
       DEFINE_CLASS_ID(SafePointScalarMerge, Type, 9)
 
-
     DEFINE_CLASS_ID(Proj,  Node, 3)
       DEFINE_CLASS_ID(CatchProj, Proj, 0)
       DEFINE_CLASS_ID(JumpProj,  Proj, 1)
